@@ -1,0 +1,37 @@
+---
+import "../styles/global.css";
+import { Image } from "astro:assets"
+import iglogo from "../img/instagram.png"
+---
+<div id=border>
+<div id="button">
+<Image src={iglogo} alt="Instagram logo"/>
+<p> Instagram</p>
+<p>@fundacjaimpuls</p>
+</div>
+</div>
+<style>
+    #border{
+        background-image:linear-gradient(rgba(255,127,42,1) 0%, rgba(239,81,44,1) 25%, rgba(242,50,58,1) 50%, rgba(245,20,72,1) 75%, rgba(255,0,102,1) 100%);
+        width:100%;
+        height:8%;
+        border-radius: 8px;
+        padding:0.15rem;
+        margin: 0.8rem 0 0.8rem 0;
+    }
+    #button{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        margin:0 0.1rem 0 0.1rem;
+        border-radius: 8px;
+        background-color: #171717;
+        width:99%;
+        height:98%;
+    }
+    p{
+        color:white;
+        font-weight: bold;
+        text-align: center;
+    }
+</style>
