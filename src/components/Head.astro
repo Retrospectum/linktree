@@ -1,0 +1,27 @@
+---
+import "../styles/global.css";
+import { Image } from "astro:assets"
+import iplogo from "../img/logofundacji.svg"
+---
+<div id="main">
+<div id="logo">
+    <Image src={iplogo} alt="logo fundacji"/>
+</div>
+
+
+<div id="fidm">
+    <p>Fundacja Impuls Dla Mlodych</p>
+</div>
+</div>
+<style>
+    #logo{
+        float: left;
+        height: 10rem;
+        width: 12rem;
+    }
+    #fidm{
+        float: right;
+        font-size: 100%;
+    }
+    
+</style>
