@@ -1,13 +1,12 @@
 ---
 import "../styles/global.css";
-import { Image } from "astro:assets"
-import iglogo from "../img/instagram.png"
+
 ---
 <div id=border>
     <div id="button">
-        <Image src={iglogo} alt="Instagram logo"/>
-        <p> Instagram</p>
-        <p>@fundacjaimpuls</p>
+        <slot name="logo"><p>coś się spierdoliło</p></slot>
+        <slot name="sm-name"><p>coś się spierdoliło</p></slot>
+        <slot name="sm-@"><p>coś się spierdoliło</p></slot>
     </div>
 </div>
 <style>
@@ -32,11 +31,5 @@ import iglogo from "../img/instagram.png"
         width:94%;
         height:98%;
     }
-    p{
-        font-weight: bold;
-        text-align: center; 
-    }
-    p:first-of-type{
-        transform:translateX(1.5rem);
-    }
+    
 </style>

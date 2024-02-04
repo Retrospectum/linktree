@@ -1,22 +1,28 @@
 ---
-import { Image } from 'astro:assets';
 import "../styles/global.css";
 import Head from "../components/Head.astro"
 import Button from "../components/Button.astro"
 ---
 	<head>
-		
+		<meta charset="utf-8">
+		<script is:inline src="https://kit.fontawesome.com/2584faf6ae.js" crossorigin="anonymous"></script>
 	</head>
+	<body>
 	<header>
 		<Head />
 	</header>
 	<main>
-		<Button />
+		<Button>
+			<p slot="logo"><i class="fa-brands fa-instagram fa-2xl"></i></p>
+			<p slot="sm-name" class="buttonp1">Instagram</p>
+			<p slot="sm-@">@fundacjaimpuls</p>
+		</Button>
 		<Button />
 		<Button />
 		<Button />
 	</main>
 	<div id=""></div>
+	</body>
 <style>
 	html{
 		background-color: black;
@@ -27,5 +33,15 @@ import Button from "../components/Button.astro"
 		height:1000px;
 		background-color: #171717;
 		padding:1rem;
+	}
+	p{
+        font-weight: bold;
+        text-align: center; 
+    }
+    .buttonp1{
+		transform: translate(1.5rem);
+	}
+	i{
+		
 	}
 </style>
