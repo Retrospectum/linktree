@@ -4,11 +4,11 @@ import { Image } from "astro:assets"
 import iglogo from "../img/instagram.png"
 ---
 <div id=border>
-<div id="button">
-<Image src={iglogo} alt="Instagram logo"/>
-<p> Instagram</p>
-<p>@fundacjaimpuls</p>
-</div>
+    <div id="button">
+        <Image src={iglogo} alt="Instagram logo"/>
+        <p> Instagram</p>
+        <p>@fundacjaimpuls</p>
+    </div>
 </div>
 <style>
     #border{
@@ -16,14 +16,16 @@ import iglogo from "../img/instagram.png"
         width:100%;
         height:8%;
         border-radius: 8px;
-        padding:0.15rem;
-        margin: 0.8rem 0 0.8rem 0;
+        padding:0.3rem 0.2rem 0.3rem 0.2rem;
+        margin: 1rem 0 1rem 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
     }
     #button{
         display:flex;
         justify-content: space-around;
         align-items: center;
-        margin:0 0.1rem 0 0.1rem;
         border-radius: 8px;
         background-color: #171717;
         width:99%;
@@ -32,6 +34,6 @@ import iglogo from "../img/instagram.png"
     p{
         color:white;
         font-weight: bold;
-        text-align: center;
+        text-align: center; 
     }
 </style>
