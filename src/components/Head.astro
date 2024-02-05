@@ -3,25 +3,25 @@ import "../styles/global.css";
 import { Image } from "astro:assets"
 import iplogo from "../img/logofundacji.svg"
 ---
-<div id="main">
-<div id="logo">
-    <Image src={iplogo} alt="logo fundacji"/>
-</div>
-
-
-<div id="fidm">
-    <p>Fundacja Impuls Dla Mlodych</p>
-</div>
-</div>
+<header>
+    <Image src={iplogo} alt="Logo Fundacji" id="ip-logo"/>
+    <h1>Fundacja Impuls dla Młodych</h1>
+</header>
 <style>
-    #logo{
-        float: left;
-        height: 10rem;
-        width: 12rem;
+    header{
+        width:94vw;
+        height:10%;
+        display:flex;
+        justify-content: space-between;
+        background-color: #171717;
+        padding: 0.5rem 2vw 0.5rem 2vw;
+        margin:0;
     }
-    #fidm{
-        float: right;
-        font-size: 100%;
-    }
-    
-</style>
+   #ip-logo{
+    width: 12rem;
+    height: 4rem;
+   } 
+   h1{
+    color: white;
+   }
+</style>  
