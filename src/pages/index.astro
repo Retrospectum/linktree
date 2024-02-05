@@ -13,30 +13,51 @@ import Button from "../components/Button.astro"
 	</header>
 	<main>
 		<Button>
+			<p slot="logo"><i class="fa-brands fa-facebook fa-2xl"></i></p>
+			<p slot="sm-name" class="buttonp1">Facebook</p>
+			<p slot="sm-@">Fundacja Impuls</p>
+		</Button>
+		<Button>
+			<p slot="logo"><i class="fa-brands fa-twitter fa-2xl"></i></p>
+			<p slot="sm-name" class="buttonp1">Twitter</p>
+			<p slot="sm-@">@fundacjaimpuls</p>
+		</Button>
+		<Button>
 			<p slot="logo"><i class="fa-brands fa-instagram fa-2xl"></i></p>
 			<p slot="sm-name" class="buttonp1">Instagram</p>
 			<p slot="sm-@">@fundacjaimpuls</p>
 		</Button>
-		<Button />
-		<Button />
-		<Button />
+		<Button>
+			<p slot="logo"><i class="fa-brands fa-tiktok fa-2xl"></i></p>
+			<p slot="sm-name" class="buttonp1">TikTok</p>
+			<p slot="sm-@">fundacja.impuls</p>
+		</Button>	
 	</main>
 	</body>
 <style>
-	@media screen and min-width(1200px){
+	@media screen and (min-width:1200px){
 		p{
 			font-size:24px;
 		}
+		.buttonp1{
+		transform: translate(2.5rem);
 	}
-	@media screen and min-width(768px) and max-width(1199px){
+	}
+	@media screen and (min-width:768px) and (max-width:1199px){
 		p{
 			font-size:20px;
 		}
+		.buttonp1{
+		transform: translate(2rem);
 	}
-	@media screen and max-width(767px){
+	}
+	@media screen and (max-width:767px){
 		p{
 			font-size:18px;
 		}
+		.buttonp1{
+		transform: translate(1.5rem);
+	}
 	}
 	html{
 		background-color: black;
@@ -52,7 +73,5 @@ import Button from "../components/Button.astro"
         font-weight: bold;
         text-align: center; 
     }
-    .buttonp1{
-		transform: translate(2.5rem);
-	}
+    
 </style>
