@@ -23,6 +23,21 @@ import Button from "../components/Button.astro"
 	</main>
 	</body>
 <style>
+	@media screen and min-width(1200px){
+		p{
+			font-size:24px;
+		}
+	}
+	@media screen and min-width(768px) and max-width(1199px){
+		p{
+			font-size:20px;
+		}
+	}
+	@media screen and max-width(767px){
+		p{
+			font-size:18px;
+		}
+	}
 	html{
 		background-color: black;
 	}
@@ -36,7 +51,6 @@ import Button from "../components/Button.astro"
 	p{
         font-weight: bold;
         text-align: center; 
-		font-size:24px;
     }
     .buttonp1{
 		transform: translate(2.5rem);
